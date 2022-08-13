@@ -1,0 +1,83 @@
+body{
+    background:#101010;
+    background:-webkit-linear-gradient(to right, #0a0a0a, #0e0f0d, #000000) ;
+    background: linear-gradient(to right, #131314, #0f100f, #0d0d0c);
+}
+
+#join-btn{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-45px;
+    margin-left:-95px;
+    font-size:25px;
+    padding:20px 40px;
+}
+
+
+
+
+
+#wlc{
+    position: fixed;
+    top:7%;
+    left:45%;
+    margin-top:-45px;
+    margin-left:-125px;
+    font-size:25px;
+    padding:20px 40px;
+}
+
+
+
+#GRP{
+    position: fixed;
+    top:65%;
+    left:78%;
+    margin-top:-45px;
+    margin-left:-125px;
+    font-size:25px;
+    padding:20px 40px;
+}
+
+#video-streams{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 90vh;
+    width: 1400px;
+    margin:0 auto;
+}
+
+.video-container{
+    max-height: 100%;
+    border: 3px solid rgb(201, 102, 21);
+    background-color: #492020;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    border:none;
+    background-color: rgb(248, 241, 245);
+    color:rgb(13, 13, 13);
+    padding:10px 20px;
+    font-size:15px;
+    margin:2px;
+    cursor: pointer;
+}
+
+#stream-controls{
+    display: none;
+    justify-content: center;
+    margin-top:0.4em;
+}
+
+@media screen and (max-width:1400px){
+    #video-streams{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 95%;
+    }
+}
